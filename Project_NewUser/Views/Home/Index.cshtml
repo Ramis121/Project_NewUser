@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Project_NewUser.Models.User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<a asp-action="Create" asp-controller="Home">Добавить пользователя</a> 
+<form asp-controller="Home" asp-action="Index">
+       <table>
+           @foreach (var item in Model)
+        {
+            @item.Name
+        }
+       </table>
+</form>

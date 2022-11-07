@@ -1,0 +1,17 @@
+﻿@model Project_NewUser.Models.User 
+
+<form asp-controller="Home" asp-action="Create">
+    <div>
+        <label>Name</label>
+        <input asp-for="Name" type="text" />
+    </div>
+
+    <div>
+        <label>Age</label>
+        <input asp-for="age" type="number" /> 
+    </div>
+
+    <div>
+        <input type="submit" value="Добавить" />
+    </div>
+</form>
